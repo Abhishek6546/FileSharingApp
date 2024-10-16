@@ -59,6 +59,7 @@ function FilePreview({ params }) {
       fileType:File.fileType,
       shortUrl:File.shortUrl
     }
+    console.log(data)
     GlobalApi.SendEmail(data).then(resp=>{
       console.log(resp)
     })
